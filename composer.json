@@ -1,0 +1,12 @@
+{
+    "name": "b2/tp1",
+    "description": "Basic stock managment system",
+    "type": "project",
+    "license": "Beerware",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}
