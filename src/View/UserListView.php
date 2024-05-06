@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 </head>
 <body>
-<div class="container mt-5">
-    <h2 class="mb-4">Liste des utilisateurs</h2>
-    <div class="mb-3">
-        <a href="user-add" class="btn btn-primary">Ajouter un utilisateur</a>
+    <?php include "Header.php" ?>
+    <div class="container mt-5">
+        <h2 class="mb-4">Liste des utilisateurs</h2>
+        <div class="mb-3">
+            <a href="user-add" class="btn btn-primary">Ajouter un utilisateur</a>
+        </div>
+        <table id="userTable" class="table table-striped" style="width:100%">
+            <thead>
+                <tr>
+                    <th scope="col">Nom d'utilisateur</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- User data will be loaded here via AJAX -->
+            </tbody>
+        </table>
     </div>
-    <table id="userTable" class="table table-striped" style="width:100%">
-        <thead>
-            <tr>
-                <th scope="col">Nom d'utilisateur</th>
-                <th scope="col">Email</th>
-                <th scope="col">Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <!-- User data will be loaded here via AJAX -->
-        </tbody>
-    </table>
-</div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>

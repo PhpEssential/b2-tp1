@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
+    <?php include "Header.php" ?>
     <div class="container mt-5">
         <h2>Ajout d'un utilisateur</h2>
         <form action="user-add-action" method="POST">
