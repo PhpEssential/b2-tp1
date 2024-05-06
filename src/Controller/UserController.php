@@ -96,7 +96,7 @@ class UserController extends BaseController{
             $this->badRequest("");
         }
         $existingUser = $this->userModel->getUserByEmail($email);
-        if ($existingUser['id'] != $id) {
+        if ($existingUser && $existingUser['id'] != $id) {
             $this->loadView("UserEditView", ["user" => $user, 'status' => "error", 'message' => "L'email est déjà utilisé !"]);
         }
 
