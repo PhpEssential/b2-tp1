@@ -4,6 +4,13 @@ TRUNCATE TABLE article_shop;
 TRUNCATE TABLE article;
 TRUNCATE TABLE user_shop;
 TRUNCATE TABLE shop;
+TRUNCATE TABLE type_movment;
+
+INSERT INTO `type_movment` (`id`, `name`) VALUES
+	(1, 'VENTE'),
+	(2, 'CASSE'),
+	(3, 'VOL'),
+	(4, 'ENTREE');
 
 INSERT INTO shop(id, `name`) VALUES(1, 'test');
 
